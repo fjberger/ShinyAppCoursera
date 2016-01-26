@@ -13,7 +13,10 @@ shinyUI(
   navlistPanel(
   
       tabPanel("Intro",
-                   p("This Shiny app presents some results of a survey among young adults looking starting an apprenticeship in Germany")),
+                   p("This Shiny app presents some results of a survey among young adults looking starting an apprenticeship in Germany."),
+
+                  p("This app is self-explaining. On the next tab you can access a bar graph. You can select if you want the results for male respondents, female respondents or both (btw. this is the 'documentation' required in the assignment.)")
+              ),
                    
       tabPanel("Question 1",
             selectInput("id1_sex", "Select male and/or female respondents", c("Male" = "Male", "Female" = "Female", "Both"="Both")),
